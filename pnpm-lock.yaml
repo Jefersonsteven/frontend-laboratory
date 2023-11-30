@@ -8,6 +8,12 @@ dependencies:
   '@astrojs/check':
     specifier: ^0.3.1
     version: 0.3.1(typescript@5.3.2)
+  '@fontsource/montserrat':
+    specifier: ^5.0.15
+    version: 5.0.15
+  '@fontsource/twinkle-star':
+    specifier: ^5.0.17
+    version: 5.0.17
   astro:
     specifier: ^3.6.0
     version: 3.6.0(typescript@5.3.2)
@@ -768,6 +774,14 @@ packages:
     requiresBuild: true
     dev: false
     optional: true
+
+  /@fontsource/montserrat@5.0.15:
+    resolution: {integrity: sha512-ZJbsCIJp6VHL1wYQUPpyBjXMzwGdfFedrmrw4r5sFi7WrMpnfJv+el1uVO6yDPIqnVqkPvjJ+xeKgJwnj2LuQQ==}
+    dev: false
+
+  /@fontsource/twinkle-star@5.0.17:
+    resolution: {integrity: sha512-Y8geTc67IQ0YXrSLqAqFoyT8bCx3CaY/0FaWAOXEBEpq2hgkuti5DtpHo8v2kIjGTTNcbsP9zbVHARL4cGlrJA==}
+    dev: false
 
   /@jridgewell/gen-mapping@0.3.3:
     resolution: {integrity: sha512-HLhSWOLRi875zjjMG/r+Nv0oCW8umGb0BgEhyX3dDX3egwZtB8PqLnjz3yedt8R5StBrzcg4aBpnh8UA9D1BoQ==}
