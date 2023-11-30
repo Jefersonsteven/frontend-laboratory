@@ -1,39 +1,41 @@
 ---
 import Layout from "../../layouts/Layout.astro";
 import "./home.css";
-import { Image } from "astro:assets";
 import math from "../../assets/images/math.jpg";
 import masonry from "../../assets/images/masonry.png";
 import animation from "../../assets/images/animations.png";
+import { OptionNavigation } from "../../components/OptionNavigation/OptionNavigation";
 ---
 
 <Layout title="Laboratory Frontend - Math">
   <main class="main">
     <nav class="navigation">
-      <a class="option" href="/math">
-        <h2 class="option__title">Math</h2>
-        <figure class="option__image image-math">
-          <Image
-            src={math}
-            alt="image with mathematical operations"
-            width={1010}
-          />
-        </figure>
-      </a>
+      <OptionNavigation
+        href="/math"
+        title="Math"
+        image={math}
+        imageDescription="image with mathematical operations"
+        aspectRadio="1/1"
+        width={1010}
+      />
 
-      <a class="option" href="/grid-css">
-        <h2 class="option__title">GRID CSS</h2>
-        <figure class="option__image image-grid">
-          <Image src={masonry} alt="image with masonry grid" width={1010} />
-        </figure>
-      </a>
+      <OptionNavigation
+        href="/grid-css"
+        title="GRID CSS"
+        image={masonry}
+        imageDescription="image with masonry grid"
+        aspectRadio="1/1"
+        width={1010}
+      />
 
-      <a class="option" href="/animations">
-        <h2 class="option__title">Animations</h2>
-        <figure class="option__image image-animation">
-          <Image src={animation} alt="image of animations css" width={1010} />
-        </figure>
-      </a>
+      <OptionNavigation
+        href="/animations"
+        title="Animations"
+        image={animation}
+        imageDescription="image of animations css"
+        aspectRadio="1/1"
+        width={1010}
+      />
     </nav>
   </main>
 </Layout>
